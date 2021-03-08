@@ -1,38 +1,69 @@
-.App {
+.container .row {
+  margin-bottom: 1rem;
+}
+
+.container .row > [class^="col"] {
+  padding-right: 5;
+  padding-left: 5;
+  padding-bottom: 5;
+}
+
+.box {
+  align-items: center;
+  padding-top: auto;
+  padding-bottom: auto;
+  background-color: black;
+  border: 5px groove gold;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ .newsHeader {
+    font-size: 90px;
+    text-shadow: gold 1px 1px 1px;
+    text-decoration: underline gold 1.5px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.newsText {
+ overflow: scroll;
+ width: 350px;
+height: 350px;
+ font-size: large;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+
+.newsH1 {
   color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline gold 1px;
+  padding-top: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+
+ .newsImg {
+  border: solid gold 1px;
+  width: 350px;
+ }
+
+ .newsImg:hover {
+  transform: scaleX(-1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.newsP {
+padding-top: 15px;
+padding-bottom: auto;
+font-size: large;
 }
+
+.readMore {
+  padding-top: 15px;
+  color: gold; 
+  font-size: 20px;  
+}
+
